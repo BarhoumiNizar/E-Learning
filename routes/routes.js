@@ -3,7 +3,7 @@ module.exports = {
    
     //Fonction pour retourner la page de conx
     PageAccueil: (req, res) => {
-        let query = "SELECT * FROM `evenement`  "; // query database to get all the players
+        let query = "SELECT * FROM `evenement`  "; // query database to get all the Events
 
         // execute query
         db.query(query, (err, result) => {
