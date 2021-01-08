@@ -1,0 +1,96 @@
+
+
+
+/*-- banner --*/
+
+.carousel .item {
+    background: url(../images1/1.jpg) no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+}
+
+.carousel .item.item2 {
+    background: url(../images1/2.jpg) no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+   
+}
+
+.carousel .item.item3 {
+    background: url(../images1/3.jpg) no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+
+}
+
+.carousel .item.item4 {
+    background: url(../images1/4.jpg) no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+   
+}
+
+.carousel-caption h3 {
+    font-size: 55px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 12px 0 20px;
+}
+
+.carousel-caption h2 span,
+.carousel-caption h3 span {
+    color: #ef5861;
+}
+
+.carousel-caption {
+    text-shadow: none;
+}
+
+.carousel-caption p {
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.carousel-indicators {
+    bottom: 20%;
+}
+
+.carousel-caption {
+    position: inherit;
+    min-height: 676px;
+    padding: 15em 0 0;
+    text-align: center;
+}
+
+
+
+.carousel-control {
+    line-height: 31em;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    background-image: none;
+}
+
+
+/*-- //banner --*/
+
+

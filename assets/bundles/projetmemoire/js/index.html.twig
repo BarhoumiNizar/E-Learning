@@ -1,0 +1,258 @@
+        <html>
+            
+            <head>
+             
+                <style>
+                    effect-3 {
+	overflow: hidden;
+}
+effect-3:before {
+	left: -1px;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background:#ffb71c;
+	/* content: ''; */
+	position: absolute;
+	transition: transform .5s ease;
+	transform: translateX(-100%);
+	-webkit-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+}
+effect-3:hover:before {
+	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-o-transform: translateX(0);
+	-ms-transform: translateX(0);
+}
+                </style>
+  <script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+        <link href="{{asset('bundles/projetmemoire/css/bg.css')}}" rel="stylesheet" type="text/css" media="all" />
+	
+	<!-- //meta-tags -->
+	<link href="{{asset('bundles/projetmemoire/css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
+	<link href="{{asset('bundles/projetmemoire/css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
+	<!-- font-awesome -->
+	<link href="{{asset('bundles/projetmemoire/css/font-awesome.css')}}" rel="stylesheet" type="text/css">
+	<!-- fonts -->
+
+  
+                
+       
+                <style>
+body {
+  margin: 0;  
+  font-family: Arial;
+}
+
+.top-container {
+ background-color: #ffcc54;
+  padding: 5px;
+  text-align: center;
+}
+
+
+
+.content {
+  padding: 5px;
+}
+
+ul.nav.navbar-nav li a {
+   
+    color: #000000;
+  
+}
+ul.nav.navbar-nav li a:hover{
+	color:#F44336;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background:none !important;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+}
+ul.nav.navbar-nav li.active a {
+    color: #ff4c4c;
+    background: none;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background:none;
+}
+</style>
+            </head>
+          <body id="imgback"  ng-app="myApp">{#background: rgba(0,0,0,0.9);#}
+              
+              <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: white;">
+               <div class=" col-lg-12 top-container ">
+                   <div class="col-lg-4"> <h3 >Scroll Down</h3> </div>
+                   <div class="col-lg-4"> <h3 >Scroll Down</h3>   </div>
+                   <div class="col-lg-4"><h3 >Scroll Down</h3></div>
+          
+             
+ 
+               </div><div style="border:white solid 1px;"></div>
+                    <div class="container-fluid" ><div class="col-lg-2"></div> <div class="col-lg-8">
+    <div class="navbar-header "  >
+        <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#myNavbar" >
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      {#<a class="navbar-brand" href="#"><img class="img-responsive" src="{{asset('bundles/projetmemoire/images/ramziim.png')}}"></a>
+  #}    </div>      
+      <div class="collapse navbar-collapse" id="myNavbar" style="margin-left:auto;margin-right: auto; ">
+ <ul class="nav navbar-nav center-block">
+          <li style="text-align: center;"><a class="effect-3" href="#!ACCUEIL">ACCUEIL</a></li>
+        <li class="dropdown" style="text-align: center;">
+          <a class="effect-3" data-toggle="dropdown" href="#!FORMATIONS">FORMATIONS <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li style="text-align: center;"><a href="#">Page 1-1</a></li>
+            <li style="text-align: center;"><a href="#">Page 1-2</a></li>
+            <li style="text-align: center;"><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li style="text-align: center;"><a href="#!CONTACTE">CONTACTEZ-NOUS</a></li>
+        <li style="text-align: center;"><a href="#!PROPOS">A PROPOS DE NOUS</a></li>
+     
+        <li style="text-align: center;"><a href="#"><span class="glyphicon glyphicon-user">
+            
+                </span>&nbspINSCRIPTION</a></li>
+                <li style="text-align: center;"><a href="#"><span class="glyphicon glyphicon-log-in">
+                    
+                        </span>&nbspCONNEXION</a></li>
+          </ul></div>
+        
+    </div><div class="col-lg-2"></div>
+  </div><div style="border:white solid 1px;"></div>
+             </nav> <br><br><br>
+            
+             {% include 'ProjetMemoireBundle:Default:slide.html.twig'%} 
+           
+           <div ng-view></div>
+
+<script>
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+   
+    .when("/FORMATIONS", {
+        templateUrl : "{{path('projet_memoire_f')}}"
+    })
+    .when("/PROPOS", {
+        templateUrl : "{{path('projet_memoire_f')}}"
+    })
+    ;
+});
+</script>
+             <section style="background-color: white;height: 415px;">
+                 
+                 <div class="col-lg-6">
+                      
+                 </div> 
+                 
+                
+                 <div class="col-lg-6">
+                     
+                 </div>
+             </section>
+             
+             <section style="background: rgba(0,0,0,0.5);height: 415px;">
+                 
+                 <div class="col-lg-6">
+                      
+                 </div> 
+                 
+                
+                 <div class="col-lg-6">
+                     
+                 </div>
+             </section>
+            <section style="background-color: white;height: 415px;">
+                 
+                 <div class="col-lg-6">
+                      
+                 </div> 
+                 
+                
+                 <div class="col-lg-6">
+                     
+                 </div>
+             </section>
+                
+          <br>
+  
+            <script type="text/javascript" src="{{asset('bundles/projetmemoire/js/bootstrap.min.js')}}"></script>    
+                <script type="text/javascript" src="{{asset('bundles/projetmemoire/js/jquery.min.js')}}"></script>  
+            <script src="{{asset('bundles/projetmemoire/js/jquery-2.1.4.min.js')}}"></script>
+	<!-- bootstrap -->
+	<script src="{{asset('bundles/projetmemoire/js/bootstrap.js')}}"></script>
+        <script src="{{asset('bundles/projetmemoire/js/popper.min.js')}}"></script>
+	
+
+	
+	<script>
+		$(window).load(function () {
+			$("#flexiselDemo1").flexisel({
+				visibleItems: 1,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 2000,
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: {
+					portrait: {
+						changePoint: 480,
+						visibleItems: 1
+					},
+					landscape: {
+						changePoint: 640,
+						visibleItems: 1
+					},
+					tablet: {
+						changePoint: 768,
+						visibleItems: 1
+					}
+				}
+			});
+
+		});
+	</script>
+	
+	<!-- here stars scrolling icon -->
+	<script>
+		$(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	
+            <script src="{{asset('bundles/projetmemoire/js/angular.min.js')}}"></script>
+    <script src="{{asset('bundles/projetmemoire/js/angular-route.js')}}"></script>
+            
+            
+            
+            </body></html>

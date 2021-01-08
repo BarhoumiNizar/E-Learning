@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>CSS Registration Form</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" type="text/css" href="../admin/css/default.css"/>
+        <link rel="stylesheet" type="text/css" href="../admin/css/inscriptions.css"/>
+    </head>
+    <body>    
+        <form method="POST" class="register">
+            <h1>Demande d'inscription</h1>
+            <fieldset class="row1">
+                <legend>Détails du compte
+                </legend>
+                <p>
+                       
+                    <label>Login * :  <%=personne.Login%>
+                    </label>
+                   
+                  
+                </p>
+                <p>
+                    <label>Password * : <%=personne.Password%>
+                    </label>
+                  
+                </p>
+            </fieldset>
+            <fieldset class="row2" style="width:220px">
+                <legend>Détails personnels                </legend>
+              <table width=100%>
+                   <tr><th><label>Nom * : </label></th><th> <%=personne.Nom%></th>
+                   
+                 
+                </tr> 
+                <tr><th><label>Prénom * :</label> </th><th><%=personne.Prenom%></th></tr> 
+                <tr><th><label>Téléphone * :</label> </th><th><%=personne.NumTel%></th></tr> 
+                <tr><th><label>Pays * :</label> </th><th><%=personne.Pays%></th></tr> 
+                <tr><th><label>Ville * :</label> </th><th><%=personne.Ville%></th></tr> 
+
+                <tr><th><label>Email * :</label> </th><th><%=personne.Email%></th></tr> 
+                
+              </table>
+            </fieldset>
+            <fieldset class="row3">
+                <legend>Informations complémentaires
+                </legend>
+               
+                <p>
+                    <label>Date de naissance * : <%=personne.DateNaiss%>
+                    </label>
+                   
+                   
+                      
+                  
+                </p>
+               <!--/<p>
+                    <label>Nationality *
+                    </label>
+                    <select>
+                        <option value="0">
+                        </option>
+                        <option value="1">United States
+                        </option>
+                    </select>
+                </p> 
+                <p>
+                    <label>Children *
+                    </label>
+                    <input type="checkbox" value="" />
+                </p>-->
+               <!--/ <div class="infobox"><h4>Helpful Information</h4>
+                    <p>Here comes some explaining text, sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </div>-->
+            </fieldset>
+           
+            <div><input type="submit" class="button" value="Accepter" name="etat"> <input type="submit" class="button" name="etat" value="Refuser"> </div>
+        </form>
+    </body>
+</html>
+
+
+
+
+

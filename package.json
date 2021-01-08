@@ -1,0 +1,21 @@
+{
+  "name": "e_learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "engine": "^1.0.0",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.4",
+    "fs": "0.0.1-security",
+    "multer": "^1.4.1",
+    "mysql": "^2.16.0"
+  }
+}

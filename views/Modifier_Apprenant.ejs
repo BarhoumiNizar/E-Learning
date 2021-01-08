@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>CSS Registration Form</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" type="text/css" href="../admin/css/default.css"/>
+        <link rel="stylesheet" type="text/css" href="../admin/css/inscriptions.css"/>
+
+    </head>
+    <body>    
+        <form method="POST" class="register">
+            <h1>Modification</h1>
+            <fieldset class="row1">
+                <legend>Détails du compte
+                </legend>
+                <p>
+                    <label>Login *
+                    </label>
+                    <input type="text" name="login" value="<%=personne.Login%>" />
+                    <label>Répétez login *
+                    </label>
+                    <input type="text"/>
+                </p>
+                <p>
+                    <label>Password*
+                    </label>
+                    <input type="text"  name="mdp" value="<%=personne.Password%>"/>
+                    <label>Répétez Password*
+                    </label>
+                    <input type="text"/>
+                    <label class="obinfo">* Champs obligatoires
+                    </label>
+                </p>
+            </fieldset>
+            <fieldset class="row2">
+                <legend>Détails personnels                </legend>
+                <p>
+                    <label>Nom *
+                    </label>
+                    <input type="text" class="long" name="nom" value="<%=personne.Nom%>"/>
+                </p>
+                <p>
+                    <label>Prénom *
+                    </label>
+                    <input type="text" maxlength="10" name="prenom" value="<%=personne.Prenom%>"/>
+                </p>
+                <p>
+                    <label class="optional">Téléphone
+                    </label>
+                    <input type="text" class="long" name="numtel" value="<%=personne.NumTel%>"/>
+                </p>
+                <p>
+                    <label>Pays *
+                    </label>
+                    <input type="text" class="long" name="pays" value="<%=personne.Pays%>"/>
+                </p>
+                <p>
+                    <label>Ville *
+                     </label>
+                    <select name="ville">
+                        <option>
+                                <%=personne.Ville%>
+                        </option>
+                        <option >Manouba
+                        </option>
+                        <option >Ariana
+                        </option>
+                        <option >seliana
+                        </option>
+                        <option >Ben arous
+                        </option>
+                        <option >Bizerte
+                        </option> 
+                    </select>
+                </p>
+                <p>
+                    <label class="optional">Email
+                    </label>
+                    <input class="long" type="email"  name="email"  value="<%=personne.Email%>"/>
+
+                </p>
+            </fieldset>
+            <fieldset class="row3">
+                <legend>Informations complémentaires
+                </legend>
+                <p>
+                    <label>Sexe *  </label>
+                    <input type="radio" name="sexe" value="M"/>
+                    <label class="gender">M</label>
+                    <input type="radio" name="sexe" value="F"/>
+                    <label class="gender">F</label>
+                </p>
+                <p>
+                    <label>Date de naissance * 
+                    </label>
+                   
+                    <input type="date" class="date" name="dateNaiss"  value="<%=personne.DateNaiss%>">
+                      
+                  
+                </p>
+               <!--/<p>
+                    <label>Nationality *
+                    </label>
+                    <select>
+                        <option value="0">
+                        </option>
+                        <option value="1">United States
+                        </option>
+                    </select>
+                </p> 
+                <p>
+                    <label>Children *
+                    </label>
+                    <input type="checkbox" value="" />
+                </p>-->
+               <!--/ <div class="infobox"><h4>Helpful Information</h4>
+                    <p>Here comes some explaining text, sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </div>
+            </fieldset>
+            <fieldset class="row4">
+                <legend>Conditions et Mailing
+                </legend>
+                <p class="agreement">
+                    <input type="checkbox" value=""/>
+                    <label>Tenez-moi au courant des nouveaux   <a href="#">événements et formations de TD Technologie</a></label>
+                </p>
+                <p class="agreement">
+                    <input type="checkbox" value=""/>
+                    <label>* J'accepte les termes et conditions</label>
+                </p>
+                / <p class="agreement">
+                    <input type="checkbox" value=""/>
+                    <label>Allow partners to send me personalized offers and related services</label>
+                </p> 
+            </fieldset>-->
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div><button class="button">Modifier </button></div>
+        </form>
+    </body>
+</html>
+
+
+
+
+

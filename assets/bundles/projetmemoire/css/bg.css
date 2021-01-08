@@ -1,0 +1,35 @@
+#imgback{
+    
+    background:url('../images/bg_public.jpg') no-repeat  ; 
+
+  background-size: cover;
+  background-attachment: fixed;/* version standardisée */
+} 
+
+#contact{
+    
+    background:url('../images/contact.jpg') no-repeat  center top ; 
+
+  background-size: cover;
+  background-attachment: fixed;/* version standardisée */
+}  
+#imgback1{
+    
+    background:url('../images/learning.jpg') no-repeat ; 
+
+  background-size: cover; /* version standardisée */
+   background-attachment: fixed;
+}  
+#imgback3{
+    
+    background:url('../asset/9raya.jpg') no-repeat ; 
+
+  background-size: cover; /* version standardisée */
+}
+#imgback4{
+    
+    background:url('../images/fseti.jpg') no-repeat ; 
+opacity:50;
+
+  background-size: cover; /* version standardisée */
+}

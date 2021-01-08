@@ -1,0 +1,75 @@
+<section id="main-content" >
+     
+        <form class="form-inline" style=" background: url(../img/certif.jpg) no-repeat;height: 459px;" method="post">
+            
+            
+        
+        <table width=50%  style="position: relative;left:40px;top:40px"  >
+          <tr><td colspan="2" align="center"><h1>Certificat de réussite</h1></td></tr>
+       <tr><td>
+                <label class="sr-only" for="inlineFormInputName2"> </label>
+                <input type="text" name="apprenant" value="<%=certif.apprenant%>" class="custom-select" placeholder="Saisir le nom de l'apprenant">
+          <br>
+        
+      </td>
+      <td>
+                <label class="sr-only" for="inlineFormInputName2">Née le</label>
+
+                <input type="date" name="desapprenant" value="<%=certif.date_naissance_apprenant%>" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder=" "> </div>
+               
+               </td>
+               </tr>
+               <tr><td><label class="sr-only" for="inlineFormInputName2"> a validé et obtenu le certificat:</label></td>
+                <td><input type="text" name="formation" value="<%=certif.NomFormation%>"  placeholder="Mentionner le nom de la formation" class="custom-select">
+                   </td>
+              </tr>
+              <!-- <tr>
+                  <td>
+                  
+                      <select class="custom-select">
+                          <option selected>Selectionnez le formateur</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                </td>
+        <td>
+            <select class="custom-select">
+                <option selected>Choisissez sa specialité</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+       
+      </td>
+    </tr>-->
+
+    <tr>
+        <td>
+            <label class="sr-only" for="inlineFormInputGroupUsername2"> Certificat N:</label> 
+            <input type="text" name="numcertif" value="<%=certif.NumCertificat%>" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="000000">
+        </td>
+
+        <td>
+            <label class="sr-only" for="inlineFormInputName2">Délivré le: </label>
+            <input type="date"  name="datecertif" value="<%=certif.DateCertificat%>" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder=" "> 
+              </td>
+            </tr>
+                <tr>
+                  <td>
+                      
+              </td>
+            
+               </tr>
+              <tr><td>
+                <button type="submit" class="btn btn-primary mb-2">Envoyer en format pdf</button>
+              </td>
+            <td></td>
+            </tr>
+            <tr ><td style="padding-top: 110px" colspan="2" align="center">
+              <img style="position: relative; left: 125px" src="../img/logo.png" width=140 height=70 ></td></tr>
+          
+          </table>
+              </form>
+            </table>
+</section>

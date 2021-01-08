@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin - Tables</title>
+
+    <!-- Bootstrap core CSS-->
+    <link href="../conx/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     
+
+    <!-- Custom fonts for this template-->
+    <link href="../conx/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Page level plugin CSS-->
+    <link href="../conx/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="../conx/css/sb-admin.css" rel="stylesheet">
+    
+    
+
+
+  <!-- =======================================================
+    Template Name: Dashio
+    Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body >
+        <body id="page-top">
+
+                <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+            
+                  <a class="navbar-brand mr-1" href=" ">FormateurTD</a>
+            
+                  <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+                    <i class="fas fa-bars"></i>
+                  </button>
+            
+                  <!-- Navbar Search -->
+                  <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+                    <div class="input-group">
+                      <!--<input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                           
+                        <button class="btn btn-primary" type="button">
+                          <i class="fas fa-search"></i>
+                        </button>-->
+                      </div>
+                    </div>
+                  </form>
+                </div>
+            
+            
+                  <!-- Navbar -->
+                  <ul class="navbar-nav ml-auto ml-md-0">
+                    <li class="nav-item dropdown no-arrow mx-1">
+                      <!--<a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bell fa-fw"></i>
+                        <span class="badge badge-danger">9+</span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown no-arrow mx-1">
+                      <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-envelope fa-fw"></i>
+                        <span class="badge badge-danger">7</span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>-->
+                    <li class="nav-item dropdown no-arrow">
+                      <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user-circle fa-fw"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="../editProfil">Mettre à jour profil</a>
+                        <!--<a class="dropdown-item" href="#">Activity Log</a>-->
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Déconnexion</a>
+                      </div>
+                    </li>
+                  </ul>
+            
+                </nav>
+            
+                <div id="wrapper">
+            
+                  <!-- Sidebar -->
+                  <ul class="sidebar navbar-nav">
+       
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-fw fa-folder"></i>
+                        <span>Tableau de bord</span>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                        <h6 class="dropdown-header"><a href="../ApprenantList">Apprenants</a></h6>
+                        <h6 class="dropdown-header"> <a href="../evenementList">Evenements</a></h6>
+                          <h6 class="dropdown-header"> <a href="../cours">cours</a></h6>
+                            <h6 class="dropdown-header">  <a href="../test">Test</a></h6>
+                            <h6 class="dropdown-header"> <a href="../notes">Notes</a></h6>
+                              <h6 class="dropdown-header"> <a href="../chat">Discussion</a></h6>
+                                <h6 class="dropdown-header"> <a href="../PlanningFormateur">Planning formation</a></h6>
+                     
+                      </div>
+                    </li>
+                  
+                  
+                  </ul>
+            
+                  <div id="content-wrapper">
+            
+                    <div class="container-fluid">
+            
+                      <!-- Breadcrumbs-->
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                          <a href=" ">Tableau de bord</a>
+                        </li>
+                        <li class="breadcrumb-item active"> Cours</li>
+                      </ol>
+            
+            
+             
+    <!--main content start-->
+    <section id="main-content" >
+      <section class="wrapper">
+        <h3> Modifier Cours</h3>
+        <!-- BASIC FORM ELELEMNTS -->
+        <div class="row mt">
+          <div class="col-lg-12">
+            <div class="form-panel">
+              <h4 class="mb"> </h4>
+              <form class="form-horizontal style-form" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                  <label class="col-sm-2 col-sm-2 control-label">Titre</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="titre" value="<%=cours.NomCours%>">
+                  </div>
+                </div>
+                <div class="container">
+                        <h2>Importer Cours</h2>
+                            <div class="form-group">
+                        
+                             <!--<label>Sélectionnez plusieurs fichiers</label>--> 
+                              <input type="file" name="cours"
+                              class="btn btn-primary" id="file">
+                             <!--<button id="clear" class="btn btn-warning btn-xs">
+                             Effacer la sélection de fichiers
+                             </button>--> 
+                            </div>
+                        
+                        </div>
+                        <script>
+                        $('#multipledemo').filestyle({
+                            buttonText : 'Multiple',
+                            buttonName : 'btn-primary'
+                        });    
+                           $('#clear').click(function() {
+                            $('#multipledemo').filestyle('clear');
+                           });                   
+                                     
+                        </script>
+                     <div><button type="submit" class="btn btn-warning">Modifier</button>
+                     </div>     
+                </div>
+                
+              </form>
+              <script type="text/javascript">
+                document.getElementById("file").value = "";
+            </script>
+            </div>
+          </div>
+          <!-- col-lg-12-->
+        </div>
+        
+          </div>
+          <!-- /col-lg-12 -->
+        </div>
+         
+            <!-- /form-panel -->
+          </div>
+          <!-- /col-lg-12 -->
+        </div>
+        <!-- /row -->
+         
+            <!-- /form-panel -->
+          </div>
+          <!-- /col-lg-12 -->
+          <!-- CUSTOM TOGGLES -->
+           
+        <!-- /row -->
+      </section>
+      <!-- /wrapper -->
+
+      </section>
+    </section>
+    <!--main content end-->
+    <!--footer start-->
+    <footer class="site-footer">
+      <div class="text-center">
+        <p>
+          &copy; Copyrights <strong>TD</strong>. All Rights Reserved
+        </p>
+        <div class="credits">
+          <!--
+            You are NOT allowed to delete the credit link to TemplateMag with free version.
+            You can delete the credit link only if you bought the pro version.
+            Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/dashio-bootstrap-admin-template/
+            Licensing information: https://templatemag.com/license/
+          -->
+           <a href="https://templatemag.com/"> </a>
+        </div>
+        <a href="index.html#" class="go-top">
+          <i class="fa fa-angle-up"></i>
+          </a>
+      </div>
+    </footer>
+    <!--footer end-->
+  </section>
+  
+  <!--<script type="text/javascript">
+    $(document).ready(function() {
+      var unique_id = $.gritter.add({
+        // (string | mandatory) the heading of the notification
+        title: 'Welcome to Dashio!',
+        // (string | mandatory) the text inside the notification
+        text: 'Hover me to enable the Close Button. You can hide the left sidebar clicking on the button next to the logo.',
+        // (string | optional) the image to display on the left
+        image: 'img/ui-sam.jpg',
+        // (bool | optional) if you want it to fade out on its own or just sit there
+        sticky: false,
+        // (int | optional) the time you want it to be alive for before fading out
+        time: 8000,
+        // (string | optional) the class name you want to apply to that specific message
+        class_name: 'my-sticky-class'
+      });
+
+      return false;
+    });
+  </script>
+  <script type="application/javascript">
+    $(document).ready(function() {
+      $("#date-popover").popover({
+        html: true,
+        trigger: "manual"
+      });
+      $("#date-popover").hide();
+      $("#date-popover").click(function(e) {
+        $(this).hide();
+      });
+
+      $("#my-calendar").zabuto_calendar({
+        action: function() {
+          return myDateFunction(this.id, false);
+        },
+        action_nav: function() {
+          return myNavFunction(this.id);
+        },
+        ajax: {
+          url: "show_data.php?action=1",
+          modal: true
+        },
+        legend: [{
+            type: "text",
+            label: "Special event",
+            badge: "00"
+          },
+          {
+            type: "block",
+            label: "Regular event",
+          }
+        ]
+      });
+    });
+
+    function myNavFunction(id) {
+      $("#date-popover").hide();
+      var nav = $("#" + id).data("navigation");
+      var to = $("#" + id).data("to");
+      console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
+    }
+  </script>-->
+  <!-- Bootstrap core JavaScript-->
+  <script src="conx/vendor/jquery/jquery.min.js"></script>
+  <script src="conx/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="conx/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Page level plugin JavaScript-->
+  <script src="conx/vendor/datatables/jquery.dataTables.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="conx/js/sb-admin.min.js"></script>
+
+  <!-- Demo scripts for this page-->
+  <script src="conx/js/demo/datatables-demo.js"></script>
+</body>
+
+</html>
